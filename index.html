@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allies of Skin | Supercharged Clinical Skincare</title>
+    <link rel="stylesheet" type="text/css" href="public/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/42ca432f4d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;200;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">shop all</a></li>
+                <li><a href="/">best sellers</a></li>
+                <li><a href="/">sale</a></li>
+            </ul>
+            <div>
+                <img src="public/images/logo.png" draggable="false" class="logo">
+            </div>
+            <ul class="icons">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-solid fa-user"></i></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="item1">
+            <p class="rec">Recommended for: All skin types</p>
+            <h1>Peptides & Antioxidants Firming Daily Treatment</h1>
+            <p>Use daily to help nourish skin, add plentiful hydration, and help reduce the appearance of dark spots,
+                large pores, and wrinkles.</p>
+            <h3>$115.00</h3>
+            <div class="quantity">
+                <a href="#" class="quantity__minus"><span style="color:#000;">-</span></a>
+                <input name="quantity" type="text" class="quantity__input" value="1">
+                <a href="#" class="quantity__plus"><span style="color:#000;">+</span></a>
+                <div class="bag">
+                    <a href="/"><button class="button">Add to Cart</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="item2">
+            <img src="public/images/product1.jpeg" draggable="false" class="product">
+        </div>
+        <div class="item3">
+            <h2>Product information</h2>
+            <p>This leave-on, all-day treatment moisturiser is supercharged with 7 Brighteners, 9
+                Antioxidants, and a
+                Teprenone Complex to combat fatigue, firm skin, and restore a healthy barrier.
+                <br>
+                This powerful time-release formula contains the concentration of a treatment mask combined with the ease
+                of a moisturiser. A next-generation blend of Palmitoyl Tripeptide-8, Palmitoyl Tripeptide-5, and
+                Marrubium Vulgare Extract supercharged with Antioxidants, Glutathione, and Thiotaine repairs tired,
+                compromised skin while defending it against all forms of environmental stressors.
+                <br>
+                Fat-soluble Vitamin C, Teprenone, and Palmitoyl Tripeptide-5 reduce the appearance of imperfections,
+                large pores, and fine lines.
+                <br>
+                With daily use, the skin’s health is enhanced, for visible resilience, radiance and firmness.
+            </p>
+            <p class="info">Dermatologist Tested | Clinically proven | Cruelty-Free</p>
+            <p class="extra">1.7 fl oz / 50 ml</p>
+        </div>
+    </div>
+    <script src="server.js"></script>
+    <script>
+        $(document).ready(function () {
+            const minus = $('.quantity__minus');
+            const plus = $('.quantity__plus');
+            const input = $('.quantity__input');
+            minus.click(function (e) {
+                e.preventDefault();
+                var value = input.val();
+                if (value > 1) {
+                    value--;
+                }
+                input.val(value);
+            });
+            plus.click(function (e) {
+                e.preventDefault();
+                var value = input.val();
+                value++;
+                input.val(value);
+            })
+        });
+    </script>
+</body>
+
+</html>

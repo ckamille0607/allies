@@ -1,0 +1,26 @@
+{
+  "name": "allies-of-skin",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "swup": "^2.0.14"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chelseakamille/allies-of-skin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chelseakamille/allies-of-skin/issues"
+  },
+  "homepage": "https://github.com/chelseakamille/allies-of-skin#readme",
+  "description": ""
+}
